@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-image: url(img/ROJO\ CON\ BORDES\ Y\ PECAS.svg);
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav.menu {
+    background-color: #3b3939;
+    color: #fff;
+    padding: 15px;
+    border: #525050 solid;
+}
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav.menu li {
+    margin: 0 10px;
+}
+
+nav.menu a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+aside {
+    border: #525050 solid;
+
+    width: 25%;
+    padding: 20px;
+    background-color: #beb9b9;
+}
+
+.izquierda {
+    text-align: center;
+}
+
+.derecha {
+    text-align: center;
+}
+
+main {
+    border: #525050 solid;
+
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #858585;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+h2,
+h3,
+p {
+    color: #333;
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #555;
+}
