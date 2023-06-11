@@ -2,21 +2,27 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #333;
+    color: #fff;
 
 }
 
 header {
-    background-image: url(img/ROJO\ CON\ BORDES\ Y\ PECAS.svg);
-    background-color: #000000;
+
+    background-color: #3b0707;
     color: #fff;
     padding: 20px;
     text-align: center;
+}
+nav img {
+    background-color: #ff1818;
+    
 }
 
 nav.menu {
     background-color: #3b3939;
     color: #fff;
-    padding: 15px;
+    padding: 25px;
     border: #525050 solid;
 }
 
@@ -29,7 +35,7 @@ nav.menu ul {
 }
 
 nav.menu li {
-    margin: 0 10px;
+    margin: 0 60px;
 }
 
 nav.menu a {
@@ -47,8 +53,9 @@ aside {
     border: #525050 solid;
 
     width: 25%;
-    padding: 20px;
-    background-color: #beb9b9;
+    padding: 30px;
+    background-color: #beb9b929;
+
 }
 
 .izquierda {
@@ -60,15 +67,15 @@ aside {
 }
 
 main {
-    border: #525050 solid;
+    border: #5b5959 solid;
 
     flex-grow: 1;
     padding: 20px;
-    background-color: #858585;
+    background-color: #a1a0a05a;
 }
 
 footer {
-    background-color: #333;
+    background-color: #cd0b0b;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -77,13 +84,13 @@ footer {
 h2,
 h3,
 p {
-    color: #333;
+    color: #fff6f6;
 }
 
 a {
-    color: #333;
+    color: #fffdfd;
 }
 
 a:hover {
-    color: #555;
+    color: #fff7f7;
 }
