@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,47 +9,118 @@
     <link rel="icon" href="img/Foto para icono en pagina.png">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<header>
-    <a href="index.html">    <img src="img/Foto para icono en pagina.png" alt="icono del emperador" height="100">
-    </a>
-    <h1>Trivia</h1>
-</header>
-<nav class="menu">
-    <ul>
-        <li><a href="wiki.html">Wiki</a></li>
-        <li><a href="teso.html">TESO</a></li>
-        <li><a href="video.html">Videos</a></li>
-        <li><a href="directos.html">Directos</a></li>
-        <li><a href="trivia.html">Trivia</a></li>
-    </ul>
-</nav>
-<main> 
+    <header>
+        <img src="img/Foto para icono en pagina.png" alt="icono del emperador" height="100">
+        <h1>Wiki del Imperio</h1>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</li>
+            <li><a href="wiki.html">Wiki</a></li>
+            <li><a href="teso.html">TESO</a></li>
+            <li><a href="video.html">Videos</a></li>
+            <li><a href="directos.html">Directos</a></li>
+            <li><a href="trivia.html">Trivia</a></li>
+        </ul>
+    </nav>
     <div class="container">
-        <section class="main-content">
-            <article>
-                <h2>Quien es igzan</h2>
-                <p>es mi novio UwU</p>
-            </article>
-            <h3>Le gusta la poronga xD</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, sint accusamus! Cupiditate quam accusamus similique et unde, consectetur earum dicta placeat aspernatur facere minima quos ea, laboriosam quisquam libero? Quas.</p>
-            <article>
-            </article>
-        </section>
-        <aside>
-            <img src="img/Casco.svg" alt="" height="25"> <h3> el mayor donador de bits el ulen</h3>
-            <img src="img/Bandera.svg" alt=""height="25"> <h3>Ulen regalo 65 subs</h3>
+        <aside class="izquierda">
+            <br>
+            <img src="img/Casco.svg" alt="" height="50">
+            <h5>el mayor donador de bits el ulen</h5> <br>
+            <img src="img/Bandera.svg" alt="" height="50">
+            <h5>Ulen regalo 65 subs</h5> <br>
+            <img src="img/Foto para icono en pagina.png" alt="" height="50">
+            <h5>Fede te siguio en twich</h5>
         </aside>
+        <main>
+            <section class="main-content">
+                <section class="main-content">
+                    <h2>Trivia: Elder Scrolls</h2>
+                    <p>¡Demuestra tus conocimientos sobre la saga Elder Scrolls con esta trivia!</p>
+                
+                    <ol>
+                        <li>
+                            <h3>¿Cuál es el título del quinto juego de la saga Elder Scrolls?</h3>
+                            <ul>
+                                <li><input type="radio" name="q1" value="a"> Skyrim</li>
+                                <li><input type="radio" name="q1" value="b"> Oblivion</li>
+                                <li><input type="radio" name="q1" value="c"> Morrowind</li>
+                            </ul>
+                        </li>
+                
+                        <li>
+                            <h3>¿Qué raza es conocida por su habilidad en el arco y la caza?</h3>
+                            <ul>
+                                <li><input type="radio" name="q2" value="a"> Altmer (Alto Elfo)</li>
+                                <li><input type="radio" name="q2" value="b"> Bosmer (Elfo de Bosque)</li>
+                                <li><input type="radio" name="q2" value="c"> Dunmer (Elfo Oscuro)</li>
+                            </ul>
+                        </li>
+                
+                        <li>
+                            <h3>¿Cuál es la capital del Imperio en la provincia de Cyrodiil?</h3>
+                            <ul>
+                                <li><input type="radio" name="q3" value="a"> Riften</li>
+                                <li><input type="radio" name="q3" value="b"> Solitude</li>
+                                <li><input type="radio" name="q3" value="c"> Imperial City</li>
+                            </ul>
+                        </li>
+                    </ol>
+                
+                    <button onclick="checkAnswers()">Comprobar respuestas</button>
+                    <p id="result"></p>
+                </section>
+                
+                <script>
+                    function checkAnswers() {
+                        var q1Answer = document.querySelector('input[name="q1"]:checked');
+                        var q2Answer = document.querySelector('input[name="q2"]:checked');
+                        var q3Answer = document.querySelector('input[name="q3"]:checked');
+                
+                        if (q1Answer && q2Answer && q3Answer) {
+                            var score = 0;
+                
+                            if (q1Answer.value === "a") {
+                                score += 1;
+                            }
+                
+                            if (q2Answer.value === "b") {
+                                score += 1;
+                            }
+                
+                            if (q3Answer.value === "c") {
+                                score += 1;
+                            }
+                
+                            document.getElementById("result").textContent = "Puntaje: " + score + "/3";
+                        } else {
+                            document.getElementById("result").textContent = "Por favor, responde todas las preguntas.";
+                        }
+                    }
+                </script>
+                
+            </section>
+        </main>
         <aside class="derecha">
-            <a href="https://www.twitch.tv/igzan"><img src="img/logotipos/twichLogo.png" alt="logo de twich" height="50"></a>
-            <a href="https://www.youtube.com/@Igzan"><img src="img/logotipos/logoYoutube.png" alt="imagen del logo de youtube" height="50"></a>
-            <a href="https://discord.com/invite/bJTxeVxx3c"><img src="img/logotipos/discord.png" alt="Logo del discord" height="50"></a>
+            <a href="https://www.twitch.tv/igzan"><img src="img/logotipos/twichLogo.png" alt="logo de twich"
+                    height="50"></a>
+            <h5>Sigue al imperio en vivo</h5> <br>
+            <a href="https://www.youtube.com/@Igzan"><img src="img/logotipos/logoYoutube.png"
+                    alt="imagen del logo de youtube" height="50"></a>
+            <h5>Suscribete al imperio</h5><br>
+            <a href="https://discord.com/invite/bJTxeVxx3c"><img src="img/logotipos/discord.png" alt="Logo del discord"
+                    height="50"></a>
+            <h5>Unete al Discord del imperio</h5>
+            <br>
         </aside>
     </div>
-</main>
-<footer>
-    @igzan 2023 Argentina <br>
-    Todos los derechos reservados
-</footer>
+    <footer>
+        @igzan 2023 Argentina <br>
+        Todos los derechos reservados
+    </footer>
 </body>
+
 </html>
